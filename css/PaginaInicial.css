@@ -1,4 +1,152 @@
-@import url("./base.css");
-@import url("./navbar.css");
-@import url("./introducao.css");
-@import url("./cards.css");
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 26px;
+    margin: 16px;
+}
+
+p {
+    color: black;
+    font-size: 12px;
+    margin: 16px;
+}
+
+h2 {
+    color: black;
+    margin: 16px;
+}
+
+.navbar {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    gap: 14px;
+    border-bottom: 1px solid #eee;
+    background: white;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+}
+
+.busca {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.busca input {
+    width: 220px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.busca button {
+    height: 36px;
+    padding: 0 16px;
+    border: 1px solid #0c8f8f;
+    border-radius: 6px;
+    background: white;
+    color: #0c8f8f;
+    cursor: pointer;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 32px 32px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+header p {
+    margin: 18px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botao {
+    height: 40px;
+    padding: 0 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao-principal {
+    background-color: #0c8f8f;
+    border: 1px solid #0c8f8f;
+    color: white;
+}
+
+.botao-secundario {
+    background-color: white;
+    border: 1px solid #0c8f8f;
+    color: #0c8f8f;
+}
+
+.card-lateral {
+    height: 210px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 16px;
+}
+
+.card {
+    height: 130px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    padding: 18px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 13px;
+}
