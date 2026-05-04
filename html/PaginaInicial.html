@@ -4,20 +4,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial do site de notícias">
     <title>Pagina Inicial</title>
     <link rel="stylesheet" href="../css/PaginaInicial.css">
 </head>
 
 <body> 
-    <nav>
-        <ul>
-            <li><a>Inicio</a></li>
-            <li><a>Paginas</a></li>
-            <li><a>Destaques</a></li>
-            <li><a>Assinas</a></li>
-            <li><a>Admin</a></li>
+    <nav class="navbar">
+        <strong class="logo">HABIT</strong>
+
+        <ul class="menu">
+            <li><a href="PaginaInicial.html">Inicio</a></li>
+            <li><a href="Paginas.html">Paginas</a></li>
+            <li><a href="Destaques.html">Destaques</a></li>
+            <li><a href="Assinantes.html">Assinar</a></li>
+            <li><a href="Admin.html">Admin</a></li>
         </ul>
+
+        <div class="busca">
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+            <button>Entrar</button>
+        </div>
+    </nav>
+
+    <header class="introducao">
+        <div class="introducao-texto">
+        <h1>Navegue por tópicos de interesse</h1>
+        <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+            <div class="introducao-botoes">
+                <button class="botao botao-principal">Explorar categorias</button>
+                <button class="botao botao-secundario">Assine a newsletter</button>
+            </div>
+        </div>
+
+        <div class="introducao-card"></div>
+    </header>   
+    <main>
+        <section>
+            <h2>Categorias Populares</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <p>Work</p>
+                </div>
+
+                <div class="card">
+                    <p>Books</p>
+                </div>
+
+                <div class="card">
+                    <p>Tehno</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>  
 </body>
 
 </html>

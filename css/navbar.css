@@ -1,0 +1,54 @@
+.navbar {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    gap: 14px;
+    border-bottom: 1px solid #eee;
+    background: white;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+}
+
+.busca {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.busca input {
+    width: 220px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.busca button {
+    height: 36px;
+    padding: 0 16px;
+    border: 1px solid #0c8f8f;
+    border-radius: 6px;
+    background: white;
+    color: #0c8f8f;
+    cursor: pointer;
+}
