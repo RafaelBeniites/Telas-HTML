@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Parte esquerdo do Appbar */
+
+.appbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+.menu {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-weight: 400;
+}
+
+.menu a:first-child {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Parte direita do Appbar, busca*/
+
+.busca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.busca input {
+    width: 220px;
+    height: 44px;
+    padding: 0 16px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+
+.busca button {
+    height: 44px;
+    padding: 0 18px;
+    border: 1px solid rgb(31, 139, 139);
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(31, 139, 139);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .appbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .busca {
+        width: 100%;
+    }
+
+    .busca input {
+        flex: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .busca {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .busca input,
+    .busca button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
