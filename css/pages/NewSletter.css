@@ -1,0 +1,77 @@
+main {
+    flex: 1;
+    display: flex;
+    padding: 24px 16px;
+    box-sizing: border-box;
+}
+
+.Newsletter {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid rgb(235, 235, 235);
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+}
+
+.FormularioNewsletter {
+    width: 100%;
+    max-width: 680px;
+    padding: 28px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 8px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.FormularioNewsletter h1 {
+    margin: 0 0 24px;
+    font-size: 30px;
+}
+
+.FormularioNewsletter > label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.FormularioNewsletter > input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.PoliticaNewsletter {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 16px 0 10px;
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.PoliticaNewsletter input {
+    width: 14px;
+    height: 14px;
+    margin: 2px 0 0;
+    flex: 0 0 auto;
+}
+
+.FormularioNewsletter button {
+    padding: 10px 16px;
+    border: 1px solid rgb(31, 139, 139);
+    border-radius: 8px;
+    background-color: rgb(31, 139, 139);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}

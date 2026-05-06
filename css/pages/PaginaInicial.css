@@ -8,13 +8,18 @@ main {
     gap: 10px;
 }
 
-.BotoesMain button {
+.BotoesMain a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px 18px;
     border: 1px solid rgb(31, 139, 139);
     border-radius: 10px;
     color: rgb(31, 139, 139);
     background-color: white;
     font-size: 15px;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 #BotaoEsquerdo {
@@ -98,7 +103,7 @@ main {
         align-items: stretch;
     }
 
-    .BotoesMain button {
+    .BotoesMain a {
         width: 100%;
         box-sizing: border-box;
     }
