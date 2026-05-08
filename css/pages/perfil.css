@@ -1,0 +1,39 @@
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.perfil-card { display: flex; flex-direction: column; gap: var(--space-md); }
+.perfil-card__avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md);
+}
+
+.suas-postagens-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.suas-postagens-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--space-md);
+  align-items: center;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+.suas-postagens-item__media { aspect-ratio: 1; background: var(--color-surface-2); border-radius: var(--radius-sm); }
+.suas-postagens-item__status { font-size: var(--fs-small); color: var(--color-text-subtle); }
+
+@media (min-width: 1024px) {
+  .perfil-grid { grid-template-columns: 300px 1fr; align-items: start; }
+}
