@@ -121,5 +121,6 @@ Atende ao mínimo da rubrica (≥3 breakpoints) e cobre 320–1440px conforme ex
 
 ## Autores
 
-- **Bruno Oliveira** — desenvolvimento e arquitetura
-- *(adicionar demais integrantes do grupo conforme commits)*
+- **Bruno Oliveira**
+- **Caue Kenzo**
+- **Rafael Benites**
