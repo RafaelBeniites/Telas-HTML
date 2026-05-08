@@ -32,13 +32,13 @@
 .cat-card__media { width: 100%; aspect-ratio: 16/9; background: var(--color-surface-2); border-radius: var(--radius-sm); object-fit: cover; }
 
 .cat-pills {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-sm);
   list-style: none; padding: 0; margin: var(--space-md) 0 0;
 }
 .cat-pill {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: var(--space-sm) var(--space-md);
@@ -46,10 +46,11 @@
   border-radius: var(--radius-md);
   background: var(--color-bg);
   color: var(--color-text);
-  min-width: 120px;
   text-align: center;
 }
 .cat-pill:hover { border-color: var(--color-primary); text-decoration: none; }
+
+@media (min-width: 480px) { .cat-pills { grid-template-columns: repeat(3, 1fr); } }
 
 .home-bottom {
   display: grid;
@@ -71,6 +72,7 @@
 @media (min-width: 768px) {
   .hero { grid-template-columns: 1.5fr 1fr; align-items: center; }
   .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  .cat-pills { grid-template-columns: repeat(5, 1fr); }
 }
 @media (min-width: 1024px) {
   .home-bottom { grid-template-columns: 2fr 1fr; align-items: start; }

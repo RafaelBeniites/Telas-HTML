@@ -43,9 +43,3 @@ a:hover { text-decoration: underline; }
   white-space: nowrap; border: 0;
 }
 
-@media (min-width: 768px) {
-  h1 { font-size: 2.75rem; }
-}
-@media (min-width: 1024px) {
-  h1 { font-size: 3rem; }
-}
