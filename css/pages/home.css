@@ -1,0 +1,77 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-xl) 0;
+}
+.hero__copy { display: flex; flex-direction: column; gap: var(--space-md); }
+.hero__cta  { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  list-style: none; padding: 0; margin: var(--space-md) 0 0;
+}
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-weight: var(--fw-bold);
+  min-height: 140px;
+  justify-content: flex-end;
+}
+.cat-card:hover { border-color: var(--color-primary); text-decoration: none; }
+.cat-card__media { width: 100%; aspect-ratio: 16/9; background: var(--color-surface-2); border-radius: var(--radius-sm); object-fit: cover; }
+
+.cat-pills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  list-style: none; padding: 0; margin: var(--space-md) 0 0;
+}
+.cat-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  text-align: center;
+}
+.cat-pill:hover { border-color: var(--color-primary); text-decoration: none; }
+
+@media (min-width: 480px) { .cat-pills { grid-template-columns: repeat(3, 1fr); } }
+
+.home-bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+.home-bottom > section { display: flex; flex-direction: column; gap: var(--space-md); }
+.editor-picks {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+.editor-picks ul { padding-left: var(--space-lg); margin-top: var(--space-sm); }
+
+@media (min-width: 480px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 768px) {
+  .hero { grid-template-columns: 1.5fr 1fr; align-items: center; }
+  .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  .cat-pills { grid-template-columns: repeat(5, 1fr); }
+}
+@media (min-width: 1024px) {
+  .home-bottom { grid-template-columns: 2fr 1fr; align-items: start; }
+}

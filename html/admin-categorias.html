@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HABIT — Admin: gestão de categorias.">
+  <title>HABIT — Admin: Categorias</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components/header.css">
+  <link rel="stylesheet" href="../css/components/footer.css">
+  <link rel="stylesheet" href="../css/components/button.css">
+  <link rel="stylesheet" href="../css/components/form.css">
+  <link rel="stylesheet" href="../css/components/sidebar.css">
+  <link rel="stylesheet" href="../css/components/table.css">
+  <link rel="stylesheet" href="../css/pages/admin.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="appbar">
+    <div class="container appbar__inner">
+      <div class="appbar__brand-row">
+        <a href="../index.html" class="brand" aria-label="HABIT — Início">HABIT</a>
+        <span class="nav-toggle">
+          <input id="nav-toggle" class="nav-toggle__checkbox" type="checkbox" aria-label="Abrir menu de navegação">
+          <label for="nav-toggle" class="nav-toggle__label"><span class="nav-toggle__icon" aria-hidden="true"></span></label>
+        </span>
+      </div>
+      <nav aria-label="Principal">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="destaques.html">Páginas</a></li>
+          <li><a href="destaques.html">Destaques</a></li>
+          <li><a href="newsletter.html">Assinar</a></li>
+          <li><a href="admin-categorias.html" aria-current="page">Admin</a></li>
+        </ul>
+      </nav>
+      <form class="appbar__search" action="busca.html" method="get" role="search">
+        <label for="q" class="sr-only">Buscar</label>
+        <div class="appbar__search-row">
+          <input id="q" name="q" type="search" placeholder="Buscar...">
+          <div class="appbar__actions">
+            <button type="submit" class="btn btn--outline btn--sm">Buscar</button>
+            <a href="entrar.html" class="btn btn--outline btn--sm">Entrar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <div class="admin-layout">
+      <aside class="admin-aside" aria-label="Painel lateral">
+      <details class="admin-sidebar" open>
+        <summary>Menu</summary>
+        <nav aria-label="Menu administrativo">
+          <ul class="admin-menu">
+            <li><a href="admin-categorias.html" aria-current="page">Categorias</a></li>
+            <li><a href="admin-criar-post.html">Criar Post</a></li>
+            <li><a href="admin-escolhas-editor.html">Escolhas do Editor</a></li>
+            <li><a href="admin-usuarios.html">Usuários</a></li>
+            <li><a href="admin-fila-revisao.html">Fila de revisão</a></li>
+            <li><a href="admin-fila-comentarios.html">Fila de comentários</a></li>
+          </ul>
+        </nav>
+      </details>
+      </aside>
+
+      <ul class="admin-stats" aria-label="Indicadores">
+        <li class="admin-stat"><span class="admin-stat__label">Posts</span><span class="admin-stat__value">128</span></li>
+        <li class="admin-stat"><span class="admin-stat__label">Visualizações</span><span class="admin-stat__value">54k</span></li>
+        <li class="admin-stat"><span class="admin-stat__label">Inscritos</span><span class="admin-stat__value">12k</span></li>
+        <li class="admin-stat"><span class="admin-stat__label">Pendências</span><span class="admin-stat__value">7</span></li>
+      </ul>
+
+      <section class="admin-panel" aria-labelledby="panel-title">
+        <h1 id="panel-title" class="admin-panel__title">Categorias</h1>
+        <form class="admin-search" role="search" action="#">
+          <label class="sr-only" for="cat-search">Buscar categorias</label>
+          <input id="cat-search" type="search" placeholder="Buscar categorias...">
+        </form>
+        <table class="data-table">
+          <caption class="sr-only">Lista de categorias</caption>
+          <thead>
+            <tr><th scope="col">Categoria</th><th scope="col"><span class="sr-only">Ações</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Categoria">Categoria #1</td><td class="actions"><button type="button" class="btn btn--outline btn--sm">Editar</button><button type="button" class="btn btn--outline btn--sm">Excluir</button></td></tr>
+            <tr><td data-label="Categoria">Categoria #2</td><td class="actions"><button type="button" class="btn btn--outline btn--sm">Editar</button><button type="button" class="btn btn--outline btn--sm">Excluir</button></td></tr>
+            <tr><td data-label="Categoria">Categoria #3</td><td class="actions"><button type="button" class="btn btn--outline btn--sm">Editar</button><button type="button" class="btn btn--outline btn--sm">Excluir</button></td></tr>
+            <tr><td data-label="Categoria">Categoria #4</td><td class="actions"><button type="button" class="btn btn--outline btn--sm">Editar</button><button type="button" class="btn btn--outline btn--sm">Excluir</button></td></tr>
+            <tr><td data-label="Categoria">Categoria #5</td><td class="actions"><button type="button" class="btn btn--outline btn--sm">Editar</button><button type="button" class="btn btn--outline btn--sm">Excluir</button></td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Rodapé">
+        <ul class="site-footer__links">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Categoria Work">Work</a></li>
+          <li><a href="#" aria-label="Categoria Bags">Bags</a></li>
+          <li><a href="#" aria-label="Categoria Lamp">Lamp</a></li>
+          <li><a href="#" aria-label="Categoria Books">Books</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy">© 2025 Meu Site • Meu site</p>
+    </div>
+  </footer>
+</body>
+</html>

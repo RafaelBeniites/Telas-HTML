@@ -1,0 +1,17 @@
+.auth {
+  display: grid;
+  place-items: center;
+  padding: var(--space-2xl) var(--space-md);
+  margin-block: var(--space-lg);
+}
+.auth__card {
+  width: 100%;
+  max-width: 480px;
+}
+.auth__title { margin-bottom: var(--space-lg); }
+.auth__alt {
+  margin-top: var(--space-md);
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+.auth__alt a { color: var(--color-primary); font-weight: var(--fw-medium); }

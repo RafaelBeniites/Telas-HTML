@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HABIT — Resultados de busca.">
+  <title>HABIT — Resultados de busca</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components/header.css">
+  <link rel="stylesheet" href="../css/components/footer.css">
+  <link rel="stylesheet" href="../css/components/button.css">
+  <link rel="stylesheet" href="../css/components/placeholder.css">
+  <link rel="stylesheet" href="../css/pages/busca.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="appbar">
+    <div class="container appbar__inner">
+      <div class="appbar__brand-row">
+        <a href="../index.html" class="brand" aria-label="HABIT — Início">HABIT</a>
+        <span class="nav-toggle">
+          <input id="nav-toggle" class="nav-toggle__checkbox" type="checkbox" aria-label="Abrir menu de navegação">
+          <label for="nav-toggle" class="nav-toggle__label"><span class="nav-toggle__icon" aria-hidden="true"></span></label>
+        </span>
+      </div>
+      <nav aria-label="Principal">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="destaques.html">Páginas</a></li>
+          <li><a href="destaques.html">Destaques</a></li>
+          <li><a href="newsletter.html">Assinar</a></li>
+          <li><a href="admin-categorias.html">Admin</a></li>
+        </ul>
+      </nav>
+      <form class="appbar__search" action="busca.html" method="get" role="search">
+        <label for="q" class="sr-only">Buscar</label>
+        <div class="appbar__search-row">
+          <input id="q" name="q" type="search" placeholder="Buscar..." value="trabalho remoto">
+          <div class="appbar__actions">
+            <button type="submit" class="btn btn--outline btn--sm">Buscar</button>
+            <a href="entrar.html" class="btn btn--outline btn--sm">Entrar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section aria-labelledby="busca-title" class="section">
+      <h1 id="busca-title">Resultados para: "trabalho remoto"</h1>
+      <ul class="results">
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 1: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 2: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 3: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 4: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 5: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 6: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 7: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+        <li><article class="result">
+          <img class="result__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do resultado">
+          <div>
+            <h2 class="result__title">Resultado 8: título de exemplo</h2>
+            <p class="result__meta">Categoria • <time datetime="2025-07-31">31 Jul 2025</time></p>
+          </div>
+        </article></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Rodapé">
+        <ul class="site-footer__links">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Categoria Work">Work</a></li>
+          <li><a href="#" aria-label="Categoria Bags">Bags</a></li>
+          <li><a href="#" aria-label="Categoria Lamp">Lamp</a></li>
+          <li><a href="#" aria-label="Categoria Books">Books</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy">© 2025 Meu Site • Meu site</p>
+    </div>
+  </footer>
+</body>
+</html>

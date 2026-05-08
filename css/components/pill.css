@@ -1,0 +1,23 @@
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  list-style: none; padding: 0; margin: var(--space-md) 0;
+}
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+  cursor: pointer;
+}
+.filter-pill:hover { border-color: var(--color-primary); }
+.filter-pill.is-active {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HABIT — Categoria Techno: posts e artigos de tecnologia.">
+  <title>HABIT — Categoria: Techno</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components/header.css">
+  <link rel="stylesheet" href="../css/components/footer.css">
+  <link rel="stylesheet" href="../css/components/button.css">
+  <link rel="stylesheet" href="../css/components/card.css">
+  <link rel="stylesheet" href="../css/components/placeholder.css">
+  <link rel="stylesheet" href="../css/components/pill.css">
+  <link rel="stylesheet" href="../css/pages/categoria.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="appbar">
+    <div class="container appbar__inner">
+      <div class="appbar__brand-row">
+        <a href="../index.html" class="brand" aria-label="HABIT — Início">HABIT</a>
+        <span class="nav-toggle">
+          <input id="nav-toggle" class="nav-toggle__checkbox" type="checkbox" aria-label="Abrir menu de navegação">
+          <label for="nav-toggle" class="nav-toggle__label"><span class="nav-toggle__icon" aria-hidden="true"></span></label>
+        </span>
+      </div>
+      <nav aria-label="Principal">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="destaques.html">Páginas</a></li>
+          <li><a href="destaques.html" aria-current="page">Destaques</a></li>
+          <li><a href="newsletter.html">Assinar</a></li>
+          <li><a href="admin-categorias.html">Admin</a></li>
+        </ul>
+      </nav>
+      <form class="appbar__search" action="busca.html" method="get" role="search">
+        <label for="q" class="sr-only">Buscar</label>
+        <div class="appbar__search-row">
+          <input id="q" name="q" type="search" placeholder="Buscar...">
+          <div class="appbar__actions">
+            <button type="submit" class="btn btn--outline btn--sm">Buscar</button>
+            <a href="entrar.html" class="btn btn--outline btn--sm">Entrar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section aria-labelledby="cat-title" class="section">
+      <h1 id="cat-title">Categoria: Techno</h1>
+      <ul class="filter-pills" aria-label="Filtros">
+        <li><button type="button" class="filter-pill is-active">Popular</button></li>
+        <li><button type="button" class="filter-pill">Mais recentes</button></li>
+        <li><button type="button" class="filter-pill">IA</button></li>
+        <li><button type="button" class="filter-pill">Produtividade</button></li>
+      </ul>
+
+      <ul class="posts-grid">
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 1</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 2</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 3</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 4</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 5</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 6</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 7</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 8</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+        <li><article class="card">
+          <img class="card__media" src="../assets/placeholder.svg" alt="Capa ilustrativa do post">
+          <h2 class="card__title">Título da Postagem 9</h2>
+          <p class="card__date"><time datetime="2025-07-31">31 Jul 2025</time></p>
+        </article></li>
+      </ul>
+
+      <div class="load-more-row">
+        <button type="button" class="btn btn--outline">Carregar mais</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Rodapé">
+        <ul class="site-footer__links">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Categoria Work">Work</a></li>
+          <li><a href="#" aria-label="Categoria Bags">Bags</a></li>
+          <li><a href="#" aria-label="Categoria Lamp">Lamp</a></li>
+          <li><a href="#" aria-label="Categoria Books">Books</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy">© 2025 Meu Site • Meu site</p>
+    </div>
+  </footer>
+</body>
+</html>
