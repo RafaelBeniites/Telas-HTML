@@ -1,6 +1,7 @@
 .appbar {
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-lg);
 }
 
 .appbar__inner {

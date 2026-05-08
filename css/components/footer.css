@@ -1,5 +1,5 @@
 .site-footer {
-  background: var(--color-surface);
+  background: var(--color-bg);
   border-top: 1px solid var(--color-border);
   padding-block: var(--space-lg);
   margin-top: auto;

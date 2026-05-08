@@ -3,7 +3,7 @@ body {
   font-size: var(--fs-body);
   line-height: var(--lh-base);
   color: var(--color-text);
-  background: var(--color-bg);
+  background: var(--color-surface);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
