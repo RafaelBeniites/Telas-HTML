@@ -33,6 +33,9 @@
 }
 .suas-postagens-item__media { width: 100%; aspect-ratio: 1; background: var(--color-surface-2); border-radius: var(--radius-sm); object-fit: cover; }
 .suas-postagens-item__status { font-size: var(--fs-small); color: var(--color-text-subtle); }
+.suas-postagens-item__status--draft     { color: var(--color-status-draft); }
+.suas-postagens-item__status--published { color: var(--color-status-published); }
+.suas-postagens-item__status--review    { color: var(--color-status-review); }
 .suas-postagens-item h2 { font-size: var(--fs-h3); margin: 0; }
 
 @media (min-width: 1024px) {

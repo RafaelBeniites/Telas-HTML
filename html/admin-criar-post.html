@@ -80,20 +80,22 @@
         <h1 id="panel-title" class="admin-panel__title">Criar Post</h1>
         <form class="form" action="#" method="post">
           <div class="form__field">
-            <label class="form__label" for="post-titulo">Título</label>
-            <input id="post-titulo" class="form__input" type="text" name="titulo" required>
+            <label class="form__label sr-only" for="post-titulo">Título</label>
+            <input id="post-titulo" class="form__input" type="text" name="titulo" placeholder="Título" required>
           </div>
           <div class="form__field">
-            <label class="form__label" for="post-conteudo">Conteúdo</label>
+            <label class="form__label sr-only" for="post-conteudo">Conteúdo</label>
             <textarea id="post-conteudo" class="form__textarea" name="conteudo" placeholder="Escreva aqui... (Editor simulador)"></textarea>
           </div>
-          <div class="form__field">
-            <label class="form__label" for="post-tags">Categorias e tags</label>
-            <input id="post-tags" class="form__input" type="text" name="tags">
-          </div>
-          <div class="form__field">
-            <label class="form__label" for="post-capa">Upload da imagem de capa</label>
-            <input id="post-capa" class="form__input" type="file" name="capa" accept="image/*">
+          <div class="form__row">
+            <div class="form__field">
+              <label class="form__label sr-only" for="post-tags">Categorias e tags</label>
+              <input id="post-tags" class="form__input" type="text" name="tags" placeholder="Categorias e tags">
+            </div>
+            <div class="form__field">
+              <label class="form__label sr-only" for="post-capa">Upload da imagem de capa</label>
+              <input id="post-capa" class="form__input" type="text" name="capa" placeholder="Upload da imagem de capa">
+            </div>
           </div>
           <div class="form__actions">
             <button type="button" class="btn btn--outline">Salvar rascunho</button>
