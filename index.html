@@ -1,83 +1,150 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Página inicial do site de notícias">
-    <title>Pagina Inicial</title>
-    <link rel="stylesheet" href="../css/global/Body.css">
-    <link rel="stylesheet" href="../css/global/Footer.css">
-    <link rel="stylesheet" href="../css/pages/PaginaInicial.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HABIT — navegue por tópicos de interesse, categorias, postagens em destaque e escolhas do editor.">
+  <title>HABIT — Início</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/components/placeholder.css">
+  <link rel="stylesheet" href="css/pages/home.css">
 </head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
 
-<body> 
-    <header>
-        <nav class="appbar">
-            <div class="menu">
-                <a><b>HABIT</b></a>
-                <a href="PaginaInicial.html">Início</a>
-                <a href="Paginas.html">Páginas</a>
-                <a href="Destaques.html">Destaques</a>
-                <a href="Assinantes.html">Assinar</a>
-                <a href="Admin.html">Admin</a>
-            </div>
-            <div class="busca">
-                <input type="text" placeholder="Buscar..." aria-label="Buscar">
-                <button type="button">Buscar</button>
-                <button type="button">Entrar</button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="Navegue">
-            <h1>Navegue por tópicos de interesse</h1>
-            <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
-
-            <nav class="BotoesMain">
-                <a id="BotaoEsquerdo" href="#categorias-populares">Explorar categorias</a>
-
-                <a id="BotaoDireito" href="NewSletter.html">Assine a newsletter</a>
-            </nav>
-        </section>
-        <section class="CategoriaPopular" id="categorias-populares"> 
-            <h2>Categorias Populares</h2>
-            <a href="">Work</a>
-            <a href="">Books</a>
-            <a href="CatTechno.html">Techno</a>
-        </section>
-
-        <section class="TodasCategorias">
-            <h2>Todas as Categorias</h2>
-            <a>Negocios</a>
-            <a href="CatTechno.html">Techno</a>
-            <a>Produtividade</a>
-            <a>Filmes</a>
-            <a>Lifestyle</a>
-            <a>Educação</a>
-            <a>Malling</a>
-            <a>eCommerce</a>
-            <a>Alimetação</a>
-            <a>Social</a>
-        </section>
-
-        <section class="Postagens">
-            <h2>Postagens em Destaque</h2>
-
-        </section>
-    </main>   
-
-    <footer>
-        <div class="Footer">
-            <a>Instagram</a>
-            <a>Work</a>
-            <a>Bags</a>
-            <a>Lamp</a>
-            <a>Books</a>
+  <header class="appbar">
+    <div class="container appbar__inner">
+      <div class="appbar__brand-row">
+        <a href="index.html" class="brand" aria-label="HABIT — Início">HABIT</a>
+        <span class="nav-toggle">
+          <input id="nav-toggle" class="nav-toggle__checkbox" type="checkbox" aria-label="Abrir menu de navegação">
+          <label for="nav-toggle" class="nav-toggle__label" aria-hidden="true"><span class="nav-toggle__icon"></span></label>
+        </span>
+      </div>
+      <nav aria-label="Principal">
+        <ul class="nav-menu" role="list">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="html/destaques.html">Páginas</a></li>
+          <li><a href="html/destaques.html">Destaques</a></li>
+          <li><a href="html/newsletter.html">Assinar</a></li>
+          <li><a href="html/admin-categorias.html">Admin</a></li>
+        </ul>
+      </nav>
+      <form class="appbar__search" action="html/busca.html" method="get" role="search">
+        <label for="q" class="sr-only">Buscar</label>
+        <div class="appbar__search-row">
+          <input id="q" name="q" type="search" placeholder="Buscar...">
+          <div class="appbar__actions">
+            <button type="submit" class="btn btn--outline btn--sm">Buscar</button>
+            <a href="html/entrar.html" class="btn btn--outline btn--sm">Entrar</a>
+          </div>
         </div>
-        <a>© 2025 Meu Site</a>
-    </footer>  
-</body>
+      </form>
+    </div>
+  </header>
 
+  <main id="main-content" class="container">
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <h1 id="hero-title">Navegue por tópicos de interesse</h1>
+        <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+        <div class="hero__cta">
+          <a href="#categorias-populares" class="btn btn--primary">Explorar categorias</a>
+          <a href="html/newsletter.html" class="btn btn--outline">Assine a newsletter</a>
+        </div>
+      </div>
+      <div class="hero__media" aria-hidden="true">
+        <span class="placeholder placeholder--hero"></span>
+      </div>
+    </section>
+
+    <section class="section" id="categorias-populares" aria-labelledby="cat-pop-title">
+      <h2 id="cat-pop-title">Categorias Populares</h2>
+      <ul class="cat-grid" role="list">
+        <li><a class="cat-card" href="html/categoria-techno.html">
+          <span class="cat-card__media placeholder" aria-hidden="true"></span>
+          <span class="cat-card__name">Work</span>
+        </a></li>
+        <li><a class="cat-card" href="html/categoria-techno.html">
+          <span class="cat-card__media placeholder" aria-hidden="true"></span>
+          <span class="cat-card__name">Books</span>
+        </a></li>
+        <li><a class="cat-card" href="html/categoria-techno.html">
+          <span class="cat-card__media placeholder" aria-hidden="true"></span>
+          <span class="cat-card__name">Techno</span>
+        </a></li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="cat-all-title">
+      <h2 id="cat-all-title">Todas as Categorias</h2>
+      <ul class="cat-pills" role="list">
+        <li><a href="html/categoria-techno.html" class="cat-pill">Negócios</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Techno</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Produtividade</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Filmes</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Lifestyle</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Educação</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Mailing</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">eCommerce</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Alimentação</a></li>
+        <li><a href="html/categoria-techno.html" class="cat-pill">Social</a></li>
+      </ul>
+    </section>
+
+    <div class="home-bottom section">
+      <section aria-labelledby="postagens-title">
+        <h2 id="postagens-title">Postagens em Destaque</h2>
+        <article class="card card--featured">
+          <span class="card__media placeholder" aria-hidden="true"></span>
+          <div>
+            <p class="card__meta"><time datetime="2025-07-31">31 Jul 2025</time> • Destaque</p>
+            <h3 class="card__title">Erros de Design que Todos Devem Evitar</h3>
+            <p class="card__date">3 min de leitura</p>
+          </div>
+        </article>
+        <article class="card card--featured">
+          <span class="card__media placeholder" aria-hidden="true"></span>
+          <div>
+            <p class="card__meta"><time datetime="2025-07-31">31 Jul 2025</time> • Destaque</p>
+            <h3 class="card__title">As Maiores Empresas por Receita</h3>
+          </div>
+        </article>
+      </section>
+
+      <aside class="editor-picks" aria-labelledby="editor-title">
+        <h2 id="editor-title">Escolhas do Editor</h2>
+        <ul role="list">
+          <li>O uso negativo da internet</li>
+          <li>O segredo do brainstorm</li>
+          <li>Escalar para pequenos negócios</li>
+          <li>O futuro do trabalho remoto</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Rodapé">
+        <ul class="site-footer__links" role="list">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Categoria Work">Work</a></li>
+          <li><a href="#" aria-label="Categoria Bags">Bags</a></li>
+          <li><a href="#" aria-label="Categoria Lamp">Lamp</a></li>
+          <li><a href="#" aria-label="Categoria Books">Books</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy">© 2025 Meu Site • HABIT</p>
+    </div>
+  </footer>
+</body>
 </html>
