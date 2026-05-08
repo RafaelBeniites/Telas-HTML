@@ -33,6 +33,7 @@
 }
 .suas-postagens-item__media { aspect-ratio: 1; background: var(--color-surface-2); border-radius: var(--radius-sm); }
 .suas-postagens-item__status { font-size: var(--fs-small); color: var(--color-text-subtle); }
+.suas-postagens-item h2 { font-size: var(--fs-h3); margin: 0; }
 
 @media (min-width: 1024px) {
   .perfil-grid { grid-template-columns: 300px 1fr; align-items: start; }
