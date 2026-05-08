@@ -12,6 +12,9 @@
   --color-border-strong:  #D1D5DB;
   --color-danger:         #B91C1C;
   --color-focus-ring:     #0F766E;
+  --color-status-draft:     #B45309;
+  --color-status-published: #15803D;
+  --color-status-review:    #D97706;
 
   --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --fs-h1: 2.5rem;
