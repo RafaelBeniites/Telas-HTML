@@ -4,7 +4,7 @@ Reconstrução fiel em HTML5 + CSS3 puros dos mockups do exercício acadêmico (
 
 ## Repositório
 
-- **URL pública**: https://github.com/&lt;usuario&gt;/Telas-HTML *(substituir pelo link real)*
+- **URL pública**: https://github.com/RafaelBeniites/Telas-HTML
 - **Branch principal**: `main`
 - **Branch de desenvolvimento**: `bruno-oliveira`
 
