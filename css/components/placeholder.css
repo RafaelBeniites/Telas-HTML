@@ -1,0 +1,7 @@
+.placeholder {
+  background: var(--color-surface-2);
+  border-radius: var(--radius-sm);
+  display: block;
+}
+.placeholder--hero { aspect-ratio: 16/9; width: 100%; }
+.placeholder--avatar { width: 100%; aspect-ratio: 1/1; border-radius: var(--radius-md); }
