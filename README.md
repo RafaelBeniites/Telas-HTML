@@ -2,9 +2,21 @@
 
 Reconstrução fiel em HTML5 + CSS3 puros dos mockups do exercício acadêmico (Mackenzie). Sem frameworks, sem JavaScript, mobile-first com 5 breakpoints, acessível conforme WCAG AA.
 
+## Repositório
+
+- **URL pública**: https://github.com/&lt;usuario&gt;/Telas-HTML *(substituir pelo link real)*
+- **Branch principal**: `main`
+- **Branch de desenvolvimento**: `bruno-oliveira`
+
 ## Como visualizar
 
 Abra `index.html` em qualquer navegador moderno. Não há build, dependências ou servidor — basta clonar o repositório e abrir o arquivo.
+
+```bash
+git clone <url-do-repositorio>
+cd Telas-HTML
+# abrir index.html no navegador
+```
 
 ## Telas implementadas
 
