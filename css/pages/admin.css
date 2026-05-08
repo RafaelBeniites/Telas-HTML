@@ -50,7 +50,7 @@
       "side panel";
     align-items: start;
   }
-  .admin-sidebar { grid-area: side; }
-  .admin-stats   { grid-area: stats; grid-template-columns: repeat(4, 1fr); }
-  .admin-panel   { grid-area: panel; }
+  .admin-aside  { grid-area: side; }
+  .admin-stats  { grid-area: stats; grid-template-columns: repeat(4, 1fr); }
+  .admin-panel  { grid-area: panel; }
 }

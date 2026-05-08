@@ -26,5 +26,5 @@
 
 @media (min-width: 768px) {
   .admin-sidebar { padding: var(--space-lg); }
-  .admin-sidebar > summary { pointer-events: none; }
+  .admin-sidebar > summary { pointer-events: none; cursor: default; }
 }

@@ -29,7 +29,7 @@
   justify-content: flex-end;
 }
 .cat-card:hover { border-color: var(--color-primary); text-decoration: none; }
-.cat-card__media { aspect-ratio: 16/9; background: var(--color-surface-2); border-radius: var(--radius-sm); }
+.cat-card__media { width: 100%; aspect-ratio: 16/9; background: var(--color-surface-2); border-radius: var(--radius-sm); object-fit: cover; }
 
 .cat-pills {
   display: flex;
